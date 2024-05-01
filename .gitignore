@@ -1,44 +1,11 @@
-### Maven ###
-!.mvn/wrapper/maven-wrapper.jar
-**/src/main/**/target/
-**/src/test/**/target/
+# Ignore everything in the project directory
+/*
 
-### Allure ###
-/allure/
-/allure/allure-2.20.1/
-/allure/allure-2.20.1target/
+# Allow src directory
+!src/
 
-### IntelliJ IDEA ###
-.idea/
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
-*.iml
-*.ipr
+# Allow pom.xml
+!pom.xml
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-**/src/main/**/build/
-**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
+# Allow TestNG XML files
+!*.xml
