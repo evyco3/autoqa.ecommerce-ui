@@ -1,0 +1,1 @@
+{"uuid":"8462ee87-f686-4fb0-87e3-0e2582828007","name":"com.evy.tests.BaseTest.setup","children":["8169469c-456e-4db9-88c2-39afa1085e64"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1714572790335,"stop":1714572794788}],"afters":[],"start":1714572790334,"stop":1714572794789}
