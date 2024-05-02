@@ -1,17 +1,14 @@
-package com.evy.framework.pages.models;
+package com.evy.framework.object.account.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NonNull;
 
-
-@Getter
-@NonNull
 @AllArgsConstructor
-public class RegisterModel {
+@Getter
+public final class RegisterModel {
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-    private String confirmPassword;
+    private String confirmation;
 }

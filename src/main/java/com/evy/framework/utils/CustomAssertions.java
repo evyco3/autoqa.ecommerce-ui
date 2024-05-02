@@ -59,9 +59,9 @@ public class CustomAssertions<T> extends AbstractAssert<CustomAssertions<T>, T> 
         }
     }
 
-    public void isTrue(String conditionDescription) {
+    public void isTrue(boolean expectedValue, String conditionDescription) {
         try {
-            if (!actual.equals(true)) {
+            if (!expectedValue) {
                 failWithMessage("Expected %s to be true, but it was false.", conditionDescription);
             } else {
                 Allure.step(String.format("Condition met: %s is true", conditionDescription));

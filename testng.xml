@@ -2,11 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 <listeners>
-    <listener class-name="com.evy.framework.utils.AllureTrendsListener"/>
 </listeners>
     <test name="G:/java/autqa-ecommerce-ui" parallel="tests" thread-count="5">
         <classes>
-            <class name="com.evy.tests.AccountDropdownTests"/>
         </classes>
     </test>
 </suite>

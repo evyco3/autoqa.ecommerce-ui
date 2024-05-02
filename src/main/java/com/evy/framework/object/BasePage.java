@@ -1,4 +1,4 @@
-package com.evy.framework.pages;
+package com.evy.framework.object;
 
 import com.evy.framework.config.ConfigReader;
 import com.evy.framework.drivers.Driver;
@@ -116,6 +116,11 @@ public class BasePage {
             WebElement headerElement = waitForElement(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".page-title > h1")));
             return headerElement.getText().trim();
         }, "Page Header", "Failed to get Page Header");
+    }
+
+    protected void waitForPageTitle(String title){
+        new WebDriverWait(Driver.get(),Duration.ofSeconds(ConfigReader.getExplicitTime()))
+                .until(ExpectedConditions.titleIs(title));
     }
 
 
